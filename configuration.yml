@@ -1,0 +1,35 @@
+---
+software:
+  name: Siteshooter
+
+domain:
+  name: http://www.kamedisdandruff.com
+  sitemap:
+   type: xml
+   url: sitemap
+
+paths:
+ output: screenshots
+
+useragents:
+  - agent: chrome
+
+viewports:
+ - viewport:
+   width: 1600
+   height: 1200
+ - viewport:
+   width: 1200
+   height: 800
+ - viewport:
+   width: 1024
+   height: 768
+ - viewport:
+   width: 768
+   height: 1024
+ - viewport:
+   width: 480
+   height: 640
+ - viewport:
+   width: 320
+   height: 480
