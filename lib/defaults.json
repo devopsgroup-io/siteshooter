@@ -1,0 +1,18 @@
+{
+    "module":{
+        "paths":{
+            "src":""
+        }
+    },
+    "paths": {
+        "output": "screenshots"
+    },
+    "screenshot": {
+        "delay": "400"
+    },
+    "viewports":[{
+        "viewport": "mobile",
+        "width": "320",
+        "height": "480"
+    }]
+}

@@ -8,10 +8,7 @@ var siteshooter = require('./lib/siteshooter'),
 
 module.exports = function() {
 
-
-
     siteshooter.cli(args).then(function() {
-
         process.exit(exitCode);
 
     }).catch(function(err) {
