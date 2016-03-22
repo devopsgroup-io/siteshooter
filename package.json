@@ -1,7 +1,7 @@
 {
   "name": "siteshooter",
   "description": "Create entire website screenshots",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "bin": {
     "siteshooter": "./bin/siteshooter.js"
   },
