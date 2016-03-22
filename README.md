@@ -3,8 +3,6 @@
 [![dependencies](https://david-dm.org/stevebritton/siteshooter.svg)](https://david-dm.org/stevebritton/siteshooter#info=dependencies&view=tables)
 
 
-> This npm package was developed to help centralize core functionality and worklfow processes for building Veeva iRep CLM Presentations. 
-
 ## Features
 
 * Generate entire website screensots based on sitemap.xml
