@@ -1,4 +1,10 @@
-{
+{   "domain":{
+        "name": "",
+        "auth":{
+            "user":"",
+            "pwd":""
+        }
+    },
     "module":{
         "paths":{
             "src":""
