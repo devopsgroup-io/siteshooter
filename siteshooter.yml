@@ -1,0 +1,32 @@
+---
+domain:
+  name:
+  auth:
+    user:
+    pwd:
+  sitemap:
+   type: xml
+   url: sitemap
+
+paths:
+ output: screenshots
+
+screenshot:
+  delay: 400
+
+useragents:
+  - agent: chrome
+
+viewports:
+ - viewport: desktop-large
+   width: 1200
+   height: 100%
+ - viewport: tablet-landscape
+   width: 1024
+   height: 768
+ - viewport: tablet-portrait
+   width: 768
+   height: 1024
+ - viewport: mobile
+   width: 320
+   height: 480
