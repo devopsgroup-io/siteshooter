@@ -19,14 +19,17 @@ useragents:
 
 viewports:
  - viewport: desktop-large
-   width: 1200
-   height: 100%
+   width: 1600
+   height: 1200
  - viewport: tablet-landscape
    width: 1024
    height: 768
  - viewport: tablet-portrait
    width: 768
    height: 1024
- - viewport: mobile
+ - viewport: iPhone5
    width: 320
-   height: 480
+   height: 568
+ - viewport: iPhone6
+   width: 375
+   height: 667
