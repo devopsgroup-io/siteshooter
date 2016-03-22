@@ -2,18 +2,21 @@
 [![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/stevebritton/siteshooter.svg?branch=master)](https://travis-ci.org/stevebritton/siteshooter)
 [![dependencies](https://david-dm.org/stevebritton/siteshooter.svg)](https://david-dm.org/stevebritton/siteshooter#info=dependencies&view=tables)
 
+> Automates full website screenshots and PDF generation, by defined viewport(s)
 
 ## Features
 
-* Generate entire website screensots based on sitemap.xml
+* Generate entire website screensots based on `sitemap.xml`
 * Define multiple viewports
-* PDF generation
+* Automated PDF generation
+* Supports basic authentication security
 
 
 **In This Documentation**
 
 1. [Getting Started](#getting-started)
-
+2. [CLI Options](#cli-options)
+3. [Troubleshooting & FAQ](#troubleshooting-and-faq)
 
 ## Getting Started
 
@@ -30,17 +33,55 @@ Install the following prerequisite on your development machine.
 $ npm install siteshooter -g
 ```
 
-### Siteshooter Configuration File
+### Create a Siteshooter Configuration File
+```
+$ siteshooter --init
+```
+
+### Update Siteshooter Configuration File
 
 [View full siteshooter.yml example](https://github.com/stevebritton/siteshooter/tree/master/siteshooter.yml)
 
-Inside `siteshooter.yml`, add Key Messages under the clm node.
+Inside `siteshooter.yml`, add addtional options
 
 ```yml
+domain:
+  name: www.devopsgroup.io
+  auth:
+    user:
+    pwd:
+  sitemap:
+   type: xml
+   url: sitemap
 
+viewports:
+ - viewport: desktop-large
+   width: 1600
+   height: 1200
+ - viewport: iPhone6
+   width: 375
+   height: 667
 
 ```
 
+## CLI Options
+
+```bash
+
+$ siteshooter --help
+
+Usage: siteshooter [options]
+
+OPTIONS
+_______________________________________________________________________________________
+-c --config            Show configuration
+-e --debug             Output exceptions
+-h --help              Print this help
+-i --init              Create siteshooter.yml template file
+-v --version           Print version number
+-V --verbose           Verbose output
+
+```
 
 ## Troubleshooting
 
