@@ -3,7 +3,11 @@
         "auth":{
             "user":"",
             "pwd":""
-        }
+        },
+        "sitemap":{
+           "type": "xml",
+           "url": "sitemap"
+       }
     },
     "module":{
         "paths":{
