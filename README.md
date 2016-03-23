@@ -2,7 +2,7 @@
 [![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/stevebritton/siteshooter.svg?branch=master)](https://travis-ci.org/stevebritton/siteshooter)
 [![dependencies](https://david-dm.org/stevebritton/siteshooter.svg)](https://david-dm.org/stevebritton/siteshooter#info=dependencies&view=tables)
 
-> Automates full website screenshots and PDF generation, by defined viewport(s)
+> Automate full website screenshots and PDF generation by defined viewport(s)
 
 ## Features
 
@@ -87,6 +87,6 @@ ________________________________________________________________________________
 
 If you're having issues with the Siteshooter Package, submit a [submit a GitHub Issue](https://github.com/stevebritton/siteshooter/issues/new).
 
-* Make sure your siteshooter.yml file exists and is well formatted
+* Make sure your `siteshooter.yml` file exists and is well formatted
 
 
