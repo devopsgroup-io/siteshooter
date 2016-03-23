@@ -6,10 +6,10 @@
 
 ## Features
 
-* Generate entire website screensots based on `sitemap.xml`
+* Generate entire website screenshots based on `sitemap.xml`
 * Define multiple viewports
 * Automated PDF generation
-* Supports basic authentication security
+* Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 
 
 **In This Documentation**
