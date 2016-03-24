@@ -1,7 +1,7 @@
 {
   "name": "siteshooter",
   "description": "Automate full website screenshots and PDF generation with multiple viewports",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "bin": {
     "siteshooter": "./bin/siteshooter.js"
   },
@@ -9,9 +9,9 @@
     "test": "mocha"
   },
   "main": "./index.js",
-  "repository": "https://github.com/stevebritton/siteshooter",
+  "repository": "https://github.com/devopsgroup-io/siteshooter",
   "bugs": {
-    "url": "https://github.com/stevebritton/siteshooter/issues"
+    "url": "https://github.com/devopsgroup-io/siteshooter/issues"
   },
   "keywords": [
     "screen shots",

@@ -1,6 +1,6 @@
 # Siteshooter 
-[![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/stevebritton/siteshooter.svg?branch=master)](https://travis-ci.org/stevebritton/siteshooter)
-[![dependencies](https://david-dm.org/stevebritton/siteshooter.svg)](https://david-dm.org/stevebritton/siteshooter#info=dependencies&view=tables)
+[![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/devopsgroup-io/siteshooter.svg?branch=master)](https://travis-ci.org/devopsgroup-io/siteshooter)
+[![dependencies](https://david-dm.org/devopsgroup-io/siteshooter.svg)](https://david-dm.org/devopsgroup-io/siteshooter#info=dependencies&view=tables)
 
 > Automate full website screenshots and PDF generation with multiple viewports
 
@@ -41,7 +41,7 @@ $ siteshooter --init
 
 ### Update Siteshooter Configuration File
 
-[View full siteshooter.yml example](https://github.com/stevebritton/siteshooter/tree/master/siteshooter.yml)
+[View full siteshooter.yml example](https://github.com/devopsgroup-io/siteshooter/tree/master/siteshooter.yml)
 
 Inside `siteshooter.yml`, add addtional options
 
@@ -92,7 +92,7 @@ run with `npm test`.
 
 ## Troubleshooting
 
-If you're having issues with the Siteshooter Package, submit a [submit a GitHub Issue](https://github.com/stevebritton/siteshooter/issues/new).
+If you're having issues with the Siteshooter Package, submit a [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
 
 * Make sure your `siteshooter.yml` file exists and is well formatted
 
