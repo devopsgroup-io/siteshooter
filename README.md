@@ -10,6 +10,8 @@
 * Define multiple viewports
 * Automated PDF generation
 * Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
+* Supports sitemaps with HTTP, HTTPS, and FTP protocol URLs
+* Follows HTTP 301 redirects
 
 
 **In This Documentation**
@@ -41,9 +43,9 @@ $ siteshooter --init
 
 ### Update Siteshooter Configuration File
 
-[View full siteshooter.yml example](https://github.com/devopsgroup-io/siteshooter/tree/master/siteshooter.yml)
+[View the full siteshooter.yml example](https://github.com/devopsgroup-io/siteshooter/tree/master/siteshooter.yml)
 
-Inside `siteshooter.yml`, add addtional options
+Inside `siteshooter.yml`, add additional options
 
 ```yml
 domain:
