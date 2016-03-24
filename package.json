@@ -9,9 +9,9 @@
     "test": "mocha"
   },
   "main": "./index.js",
-  "repository": "https://github.com/stevebritton/siteshooter",
+  "repository": "https://github.com/devopsgroup-io/siteshooter",
   "bugs": {
-    "url": "https://github.com/stevebritton/siteshooter/issues"
+    "url": "https://github.com/devopsgroup-io/siteshooter/issues"
   },
   "keywords": [
     "screen shots",
