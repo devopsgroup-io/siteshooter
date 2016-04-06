@@ -81,6 +81,7 @@ ________________________________________________________________________________
 -e --debug             Output exceptions
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file
+-s --sitemap           Sitemap options
 -v --version           Print version number
 -V --verbose           Verbose output
 
