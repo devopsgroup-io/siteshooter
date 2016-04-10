@@ -6,6 +6,7 @@
 
 ## Features
 
+* Crawls specified domain and generates `sitemap.xml` on the fly
 * Generate entire website screenshots based on `sitemap.xml`
 * Define multiple viewports
 * Automated PDF generation
