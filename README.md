@@ -6,6 +6,7 @@
 
 ## Features
 
+* Crawls specified domain and generates `sitemap.xml` on the fly
 * Generate entire website screenshots based on `sitemap.xml`
 * Define multiple viewports
 * Automated PDF generation
@@ -81,6 +82,9 @@ ________________________________________________________________________________
 -e --debug             Output exceptions
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file
+-s --sitemap           Sitemap options
+-s --sitemap=create    Crawls domain name specified in siteshooter.yml file and generates a sitemap.xml file
+-s --sitemap=delete    Deletes sitemap.xml file in working directory
 -v --version           Print version number
 -V --verbose           Verbose output
 
