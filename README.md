@@ -7,9 +7,10 @@
 ## Features
 
 * Crawls specified host and generates `sitemap.xml` on the fly
-* Generate entire website screenshots based on `sitemap.xml`
+* Generates entire website screenshots based on `sitemap.xml`
 * Define multiple viewports
 * Automated PDF generation
+* Includes crawled meta data in generated PDF
 * Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 * Supports sitemaps with HTTP, HTTPS, and FTP protocol URLs
 * Follows HTTP 301 redirects
@@ -26,7 +27,7 @@
 
 ### Dependencies
 
-Install the following prerequisite on your development machine.
+Install the following prerequisite on your development machine:
 
 * [Node.js](http://nodejs.org)
 
@@ -82,15 +83,21 @@ ________________________________________________________________________________
 -e --debug             Output exceptions
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file
+-p --pdf               Generates PDFs, by defined viewports, based on screenshots created via Siteshooter
 -s --screenshots       Generates screenshots, by viewports, based on sitemap.xml file
 -S --sitemap           Sitemap options
 -S --sitemap=create    Crawls domain name specified in siteshooter.yml file and generates a sitemap.xml file
 -S --sitemap=delete    Deletes sitemap.xml file in working directory
 -v --version           Print version number
 -V --verbose           Verbose output
-
+-w --website           Reports on website information based on Siteshooter crawled results
 ```
 
+When running a `siteshooter' command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
+
+* --sitemap=create
+* --screenshots
+* --pdf
 
 ## Tests
 
