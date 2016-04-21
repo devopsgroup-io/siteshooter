@@ -45,7 +45,8 @@
     "yamljs": "^0.2.6"
   },
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "standard-version": "^2.1.2"
   },
   "engines": {
     "node": ">=4.3.1",
