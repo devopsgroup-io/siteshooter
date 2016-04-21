@@ -6,7 +6,8 @@
     "siteshooter": "./bin/siteshooter.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "standard-version"
   },
   "main": "./index.js",
   "repository": "https://github.com/devopsgroup-io/siteshooter",
