@@ -6,7 +6,8 @@
     "siteshooter": "./bin/siteshooter.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "standard-version"
   },
   "main": "./index.js",
   "repository": "https://github.com/devopsgroup-io/siteshooter",
@@ -45,7 +46,8 @@
     "yamljs": "^0.2.6"
   },
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "standard-version": "^2.1.2"
   },
   "engines": {
     "node": ">=4.3.1",
