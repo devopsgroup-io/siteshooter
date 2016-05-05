@@ -33,10 +33,16 @@ Install the following prerequisite on your development machine:
 
 
 ### Quick Start
-
 ```
-$ npm install siteshooter -g
+$ npm install siteshooter --global
 ```
+If siteshooter is installed, make sure you have the latest version by running:
+```
+$ npm update siteshooter --global
+```
+* You may need to run these commands with elevated privileges, e.g. `sudo`, you will be prompted to do so if needed.
+* Installing with the `--global` flag affords you the `siteshooter` command on your machine's command line at any path.
+* Read more about the `--global` flag [here](https://docs.npmjs.com/files/folders).
 
 ### Create a Siteshooter Configuration File
 ```
@@ -101,8 +107,7 @@ When running a `siteshooter' command without any options, the following will run
 
 ## Tests
 
-Tests are written with [Mocha](http://visionmedia.github.com/mocha/) and can be
-run with `npm test`.
+Tests are written with [Mocha](http://visionmedia.github.com/mocha/) and can be run with `npm test`.
 
 ## Troubleshooting
 
