@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.7.2...v0.8.0) (2016-05-05)
+
+
+### Bug Fixes
+
+* **cli:** correct website command ([9d086c9](https://github.com/devopsgroup-io/siteshooter/commit/9d086c9))
+
+### Features
+
+* **crawler:** add additional metadata when crawling host ([eaaef4d](https://github.com/devopsgroup-io/siteshooter/commit/eaaef4d))
+* **crawler:** add crawler command to CLI ([97ded92](https://github.com/devopsgroup-io/siteshooter/commit/97ded92))
+* **crawler:** add crawler function to tasks ([590dec1](https://github.com/devopsgroup-io/siteshooter/commit/590dec1))
+* **crawler:** add new crawler module ([8f09ed7](https://github.com/devopsgroup-io/siteshooter/commit/8f09ed7))
+* **pdf-shooter:** add Google Analytics version to cover page ([c9c44f7](https://github.com/devopsgroup-io/siteshooter/commit/c9c44f7))
+* **user options:** add user options for the pdf generation process ([55c1f4b](https://github.com/devopsgroup-io/siteshooter/commit/55c1f4b))
+* **user options:** add user options for the site crawler process ([c7ac6dc](https://github.com/devopsgroup-io/siteshooter/commit/c7ac6dc))
+* **user options:** add user options for the site crawler process ([26af72f](https://github.com/devopsgroup-io/siteshooter/commit/26af72f))
+* **user options:** add user options for the site crawler process ([f3ffd0f](https://github.com/devopsgroup-io/siteshooter/commit/f3ffd0f))
+* **website:** add GA version function check ([83726d3](https://github.com/devopsgroup-io/siteshooter/commit/83726d3))
+
+
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/devopsgroup-io/siteshooter/compare/v0.7.1...v0.7.2) (2016-04-25)
 
