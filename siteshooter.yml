@@ -11,8 +11,16 @@ domain:
 paths:
  output: screenshots
 
+pdf_options:
+ excludeMeta: true
+
 screenshot:
   delay: 400
+
+sitecrawler_options:
+  exclude:
+   - "pdf"
+  stripQuerystring: true
 
 useragents:
   - agent: chrome
