@@ -59,6 +59,14 @@ domain:
    type: xml
    url: sitemap
 
+pdf_options:
+ excludeMeta: true
+
+sitecrawler_options:
+  exclude:
+   - "pdf"
+  stripQuerystring: false
+
 viewports:
  - viewport: desktop-large
    width: 1600

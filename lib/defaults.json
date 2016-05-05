@@ -17,8 +17,15 @@
     "paths": {
         "output": "screenshots"
     },
+    "pdf_options":{
+        "excludeMeta": false
+    },
     "screenshot": {
         "delay": "400"
+    },
+    "sitecrawler_options":{
+        "exclude":[],
+        "stripQuerystring": true
     },
     "viewports":[{
         "viewport": "mobile",
