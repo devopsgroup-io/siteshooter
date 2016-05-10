@@ -97,19 +97,17 @@ ________________________________________________________________________________
 -e --debug             Output exceptions
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file
--p --pdf               Generates PDFs, by defined viewports, based on screenshots created via Siteshooter
--s --screenshots       Generates screenshots, by viewports, based on sitemap.xml file
--S --sitemap           Sitemap options
--S --sitemap=create    Crawls domain name specified in siteshooter.yml file and generates a sitemap.xml file
--S --sitemap=delete    Deletes sitemap.xml file in working directory
+-p --pdf               Generate PDFs, by defined viewports, based on screenshots created via Siteshooter
+-s --screenshots       Generate screenshots, by viewports, based on sitemap.xml file
+-S --sitemap           Crawl domain name specified in siteshooter.yml file and generate a local sitemap.xml file
 -v --version           Print version number
 -V --verbose           Verbose output
--w --website           Reports on website information based on Siteshooter crawled results
+-w --website           Report on website information based on Siteshooter crawled results
 ```
 
 When running a `siteshooter' command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
 
-* --sitemap=create
+* --sitemap
 * --screenshots
 * --pdf
 
@@ -119,9 +117,9 @@ Tests are written with [Mocha](http://visionmedia.github.com/mocha/) and can be 
 
 ## Troubleshooting
 
-If you're having issues with the Siteshooter Package, submit a [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
+If you're having issues with Siteshooter, submit a [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
 
-* Make sure your `siteshooter.yml` file exists and is well formatted
+* Make sure you have a `siteshooter.yml` file in your working directory and it's well formatted
 
 ## License
 ```
