@@ -38,7 +38,6 @@
     "pdfkit": "^0.7.2",
     "phantom": "^2.0.2",
     "q": "^1.4.1",
-    "request": "^2.69.0",
     "simplecrawler": "^0.7.0",
     "update-notifier": "^0.7.0",
     "url-parse": "^1.1.1",
