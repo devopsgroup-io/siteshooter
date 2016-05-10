@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.8.0...v0.9.0) (2016-05-10)
+
+
+### Bug Fixes
+
+* **crawler:** add WordPress specific files to ignore when crawling a site ([eda3336](https://github.com/devopsgroup-io/siteshooter/commit/eda3336))
+* **pdf-shooter:** resolves issue with PDF generation for smaller viewports ([dbeb547](https://github.com/devopsgroup-io/siteshooter/commit/dbeb547))
+
+### Features
+
+* **module:** add update-notifier module to help end-users know when a new version is released ([0b1fd79](https://github.com/devopsgroup-io/siteshooter/commit/0b1fd79))
+
+### Performance Improvements
+
+* **update modules:** remove del module as it's not being used ([b107a61](https://github.com/devopsgroup-io/siteshooter/commit/b107a61))
+* **update modules:** remove request module as it's not being used ([1a0fa02](https://github.com/devopsgroup-io/siteshooter/commit/1a0fa02))
+* **update modules:** simple-crawler to version 0.7.0 ([df7ba9f](https://github.com/devopsgroup-io/siteshooter/commit/df7ba9f))
+* collapse sitemap functionality into the crawler module ([6003219](https://github.com/devopsgroup-io/siteshooter/commit/6003219))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.7.2...v0.8.0) (2016-05-05)
 
