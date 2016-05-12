@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/devopsgroup-io/siteshooter/compare/v0.9.0...v0.9.1) (2016-05-12)
+
+
+### Bug Fixes
+
+* **screenshots:** add file exclusions for screen shooting and capture page JS errors and report on resources not loading ([4179eb7](https://github.com/devopsgroup-io/siteshooter/commit/4179eb7))
+* **screenshots:** formatting ([7ecb737](https://github.com/devopsgroup-io/siteshooter/commit/7ecb737))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.8.0...v0.9.0) (2016-05-10)
 
