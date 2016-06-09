@@ -113,7 +113,7 @@ When running a `siteshooter' command without any options, the following will run
 
 ## Tests
 
-Tests are written with [Mocha](http://visionmedia.github.com/mocha/) and can be run with `npm test`.
+Tests are written with [Mocha](https://github.com/mochajs/mocha) and can be run with `npm test`.
 
 ## Troubleshooting
 
