@@ -23,7 +23,9 @@
     "automation"
   ],
   "author": {
-    "name": "Steve Britton"
+    "name": "Steve Britton",
+    "email": "steve.britton@devopsgroup.io",
+    "url": "https://devopsgroup.io"
   },
   "license": "MIT",
   "dependencies": {
