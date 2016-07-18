@@ -23,32 +23,34 @@
     "automation"
   ],
   "author": {
-    "name": "Steve Britton"
+    "name": "Steve Britton",
+    "email": "steve.britton@devopsgroup.io",
+    "url": "https://devopsgroup.io"
   },
   "license": "MIT",
   "dependencies": {
     "async-foreach": "^0.1.3",
     "chalk": "^1.1.1",
     "cheerio": "^0.20.0",
-    "globby": "^4.0.0",
+    "globby": "^5.0.0",
     "graceful-fs": "^4.1.3",
     "image-size": "^0.5.0",
-    "lodash": "^4.6.1",
+    "lodash": "^4.13.1",
     "minimist": "^1.2.0",
     "pdfkit": "^0.7.2",
     "phantom": "^2.0.2",
     "q": "^1.4.1",
     "simplecrawler": "^0.7.0",
-    "update-notifier": "^0.7.0",
+    "update-notifier": "^1.0.2",
     "url-parse": "^1.1.1",
     "when": "^3.7.7",
-    "xml2js": "^0.4.16",
+    "xml2js": "^0.4.17",
     "xmlbuilder": "^8.2.2",
-    "yamljs": "^0.2.6"
+    "yamljs": "^0.2.8"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
-    "standard-version": "^2.1.2"
+    "standard-version": "^2.4.0"
   },
   "engines": {
     "node": ">=4.3.1",
