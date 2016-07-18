@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "mocha": "^2.4.5",
-    "standard-version": "^2.1.2"
+    "standard-version": "^2.4.0"
   },
   "engines": {
     "node": ">=4.3.1",
