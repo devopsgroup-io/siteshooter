@@ -41,7 +41,7 @@
     "phantom": "^2.0.2",
     "q": "^1.4.1",
     "simplecrawler": "^0.7.0",
-    "update-notifier": "^0.7.0",
+    "update-notifier": "^1.0.2",
     "url-parse": "^1.1.1",
     "when": "^3.7.7",
     "xml2js": "^0.4.16",
