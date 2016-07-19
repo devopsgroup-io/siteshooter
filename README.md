@@ -11,6 +11,7 @@
 * Define multiple viewports
 * Automated PDF generation
 * Includes crawled meta data in generated PDF
+* Reports on broken website links (404 errors)
 * Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 * Supports sitemaps with HTTP, HTTPS, and FTP protocol URLs
 * Follows HTTP 301 redirects
