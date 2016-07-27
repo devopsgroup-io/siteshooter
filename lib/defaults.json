@@ -24,6 +24,7 @@
         "delay": "400"
     },
     "sitecrawler_options":{
+        "cache": false,
         "exclude":[],
         "stripQuerystring": true
     },
