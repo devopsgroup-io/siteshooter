@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.9.2...v0.10.0) (2016-07-27)
+
+
+### Bug Fixes
+
+* check for undefined meta data ([3c0bb84](https://github.com/devopsgroup-io/siteshooter/commit/3c0bb84))
+
+
+### Features
+
+* add SimpleCrawler cache ([cab0476](https://github.com/devopsgroup-io/siteshooter/commit/cab0476))
+
+
+### Performance Improvements
+
+* **module update:** globby ([12fda28](https://github.com/devopsgroup-io/siteshooter/commit/12fda28))
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/devopsgroup-io/siteshooter/compare/v0.9.1...v0.9.2) (2016-07-18)
 
