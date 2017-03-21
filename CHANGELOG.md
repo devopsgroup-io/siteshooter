@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.11.0...v1.0.0) (2017-03-21)
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.10.0...v0.11.0) (2017-03-21)
 
