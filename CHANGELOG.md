@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.11.0...v1.0.0) (2017-03-21)
 
+### BREAKING CHANGES
 
+* drop support for Node < 6.0 to enable usage of new tools and packages.
 
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.10.0...v0.11.0) (2017-03-21)
