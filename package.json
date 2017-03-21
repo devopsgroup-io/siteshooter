@@ -40,7 +40,7 @@
     "pdfkit": "^0.7.2",
     "phantom": "^2.0.2",
     "q": "^1.4.1",
-    "simplecrawler": "^0.7.0",
+    "simplecrawler": "^1.1.1",
     "update-notifier": "^1.0.2",
     "url-parse": "^1.1.1",
     "when": "^3.7.7",
