@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.10.0...v0.11.0) (2017-03-21)
+
+
+### Bug Fixes
+
+* **crawler:** add extension docx to the crawler exclusion list ([62b088d](https://github.com/devopsgroup-io/siteshooter/commit/62b088d))
+* **crawler:** allow user defined options to set Simple Crawler properties. ([097e874](https://github.com/devopsgroup-io/siteshooter/commit/097e874))
+* **screenshots:** check for ignoreInvalidSSL option and set ‘--ignore-ssl-errors=yes’ ([86104df](https://github.com/devopsgroup-io/siteshooter/commit/86104df))
+
+
+### Features
+
+* **add quiet argument:** move package update checker ([a3da7d0](https://github.com/devopsgroup-io/siteshooter/commit/a3da7d0))
+
+
+### Performance Improvements
+
+* **module update:** simplecrawler from version 0.7.0 to 1.1.1 ([d3ae0f6](https://github.com/devopsgroup-io/siteshooter/commit/d3ae0f6))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/devopsgroup-io/siteshooter/compare/v0.9.2...v0.10.0) (2016-07-27)
 
