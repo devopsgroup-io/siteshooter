@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.0.1...v1.1.0) (2017-03-28)
+
+
+### Bug Fixes
+
+* **crawler:** trim white space. ([d8b3305](https://github.com/devopsgroup-io/siteshooter/commit/d8b3305))
+
+
+### Features
+
+* **cli:** verify node version. ([cea2c6d](https://github.com/devopsgroup-io/siteshooter/commit/cea2c6d))
+* **pdf-shooter:** Generate PDF in the order of the sitemap file. ([da52a4a](https://github.com/devopsgroup-io/siteshooter/commit/da52a4a))
+* **screenshots:**  Inject custom JS script is an inject.js file exists in the working directory. ([4eed3a9](https://github.com/devopsgroup-io/siteshooter/commit/4eed3a9))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.0.0...v1.0.1) (2017-03-22)
 
