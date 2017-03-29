@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.0...v1.1.1) (2017-03-29)
+
+
+### Bug Fixes
+
+* **crawler:** don’t override user agent. ([842c552](https://github.com/devopsgroup-io/siteshooter/commit/842c552))
+* **crawler:** trim white space. ([1ecce04](https://github.com/devopsgroup-io/siteshooter/commit/1ecce04))
+* **pdf-shooter:** Exclude pdf links in sitemap.xml file. ([fd10061](https://github.com/devopsgroup-io/siteshooter/commit/fd10061))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.0.1...v1.1.0) (2017-03-28)
 
