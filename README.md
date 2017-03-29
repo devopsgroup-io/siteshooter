@@ -4,7 +4,7 @@
 
 > Automate full website screenshots and PDF generation with multiple viewports
 
-## Features
+### Features
 
 * Crawls specified host and generates `sitemap.xml` on the fly
 * Generates entire website screenshots based on `sitemap.xml`
@@ -20,17 +20,26 @@
 **In This Documentation**
 
 1. [Getting Started](#getting-started)
+2. [Siteshooter Configuration File](#create-a-siteshooter-configuration-file)
 2. [CLI Options](#cli-options)
 3. [Tests](#tests)
 4. [Troubleshooting & FAQ](#troubleshooting-and-faq)
 
 ## Getting Started
 
-### Dependencies
+#### Dependencies
 
 Install the following prerequisite on your development machine:
 
-* [Node.js](http://nodejs.org)
+* [Node.js - **version >= 6.0.0**](http://nodejs.org)
+
+#### NPM Libraries
+
+Libraries **Siteshooter** depends on:
+
+* [PDFKit](https://github.com/devongovett/pdfkit)
+* [PhantomJS](https://github.com/ariya/phantomjs)
+* [Simple web crawler](https://github.com/cgiffard/node-simplecrawler)
 
 
 ### Quick Start
@@ -54,11 +63,13 @@ $ siteshooter --init
 
 [View the full siteshooter.yml example](https://github.com/devopsgroup-io/siteshooter/tree/master/siteshooter.yml)
 
-Inside `siteshooter.yml`, add additional options
+Inside `siteshooter.yml`, add additional options. 
+
+* All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler) can be added to `sitecrawler_options` and will pass through to the crawler process
 
 ```yml
 domain:
-  name: www.devopsgroup.io
+  name: https://www.devopsgroup.io
   auth:
     user:
     pwd:
@@ -69,10 +80,14 @@ domain:
 pdf_options:
  excludeMeta: true
 
+screenshot:
+  delay: 400
+
 sitecrawler_options:
   exclude:
    - "pdf"
   stripQuerystring: false
+  ignoreInvalidSSL: true
 
 viewports:
  - viewport: desktop-large
@@ -83,6 +98,27 @@ viewports:
    height: 667
 
 ```
+
+### Custom JavaScript Inject File
+ 
+ To interact with the DOM, prior to the screenshot process, add a `inject.js` file in the same directory as the `siteshooter.yml`. 
+
+ **Example**
+ ```js
+/**
+ * @file:            inject.js
+ * @description:     used to inject custom JavaScript into a webpage prior to a screenshot. 
+ */
+
+console.log('Javascript injected into page.');
+
+if ( typeof(jQuery) !== "undefined" ) {
+
+    jQuery(document).ready(function() {
+        console.log('jQuery loaded.');
+    });
+}
+ ```
 
 ## CLI Options
 
@@ -118,7 +154,7 @@ Tests are written with [Mocha](https://github.com/mochajs/mocha) and can be run 
 
 ## Troubleshooting
 
-If you're having issues with Siteshooter, submit a [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
+If you're having issues with Siteshooter, [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
 
 * Make sure you have a `siteshooter.yml` file in your working directory and it's well formatted
 
