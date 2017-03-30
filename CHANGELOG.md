@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.2...v1.1.3) (2017-03-30)
+
+
+### Bug Fixes
+
+* Remove sitemap configuration options as it’s not necessary. ([94b2c15](https://github.com/devopsgroup-io/siteshooter/commit/94b2c15))
+
+
+### Performance Improvements
+
+* Replace graceful-fs dependency with node core fs library ([0ed6bbc](https://github.com/devopsgroup-io/siteshooter/commit/0ed6bbc))
+* Replace graceful-fs dependency with node core fs library ([0767ef6](https://github.com/devopsgroup-io/siteshooter/commit/0767ef6))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.1...v1.1.2) (2017-03-29)
 
