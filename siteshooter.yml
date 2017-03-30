@@ -4,9 +4,6 @@ domain:
   auth:
     user:
     pwd:
-  sitemap:
-   type: xml
-   url: sitemap
 
 paths:
  output: screenshots
@@ -22,9 +19,6 @@ sitecrawler_options:
   exclude:
    - "pdf"
   stripQuerystring: true
-
-useragents:
-  - agent: chrome
 
 viewports:
  - viewport: desktop-large

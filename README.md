@@ -73,9 +73,6 @@ domain:
   auth:
     user:
     pwd:
-  sitemap:
-   type: xml
-   url: sitemap
 
 pdf_options:
  excludeMeta: true
