@@ -139,11 +139,11 @@ ________________________________________________________________________________
 -w --website           Report on website information based on Siteshooter crawled results
 ```
 
-When running a `siteshooter' command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
+When running a `siteshooter` command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
 
-* --sitemap
-* --screenshots
-* --pdf
+* `--pdf`
+* `--screenshots`
+* `--sitemap`
 
 ## Tests
 
