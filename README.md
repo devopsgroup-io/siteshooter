@@ -65,7 +65,7 @@ $ siteshooter --init
 
 Inside `siteshooter.yml`, add additional options. 
 
-* All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler) can be added to `sitecrawler_options` and will pass through to the crawler process
+* All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler#configuration) can be added to `sitecrawler_options` and will pass through to the crawler process
 
 ```yml
 domain:
