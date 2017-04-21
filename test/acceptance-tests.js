@@ -2,14 +2,38 @@
 
 'use strict';
 var assert = require('assert'),
-    siteshooter;
+    exec = require('child_process').exec;
+
+
+function siteshooter(task, done) {
+    exec('siteshooter' + ' ' + task, done);
+}
 
 
 describe('acceptance tests for siteshooter Module', function() {
 
     it('module can be imported without blowing up', function() {
-        siteshooter = require('../index');
 
-        assert(siteshooter !== undefined);
+        var siteshooterLoad = require('../index');
+
+        assert(siteshooterLoad !== undefined);
     });
+
+
+    it('show help passes without error', function(done) {
+        siteshooter('--help', function(error, stdout, stderr) {
+            assert.ok(error === null);
+            done();
+        });
+    });
+
+    it('show siteshooter.yml init passes without error', function(done) {
+        siteshooter('--init', function(error, stdout, stderr) {
+            console.log(stdout);
+            assert.ok(error === null);
+            done();
+        });
+    });
+
 });
+
