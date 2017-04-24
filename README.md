@@ -65,7 +65,7 @@ $ siteshooter --init
 
 Inside `siteshooter.yml`, add additional options. 
 
-* All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler) can be added to `sitecrawler_options` and will pass through to the crawler process
+* All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler#configuration) can be added to `sitecrawler_options` and will pass through to the crawler process
 
 ```yml
 domain:
@@ -139,11 +139,11 @@ ________________________________________________________________________________
 -w --website           Report on website information based on Siteshooter crawled results
 ```
 
-When running a `siteshooter' command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
+When running a `siteshooter` command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
 
-* --sitemap
-* --screenshots
-* --pdf
+* `--pdf`
+* `--screenshots`
+* `--sitemap`
 
 ## Tests
 
