@@ -7,14 +7,20 @@ var chalk = require('chalk'),
 var nodeVersion = process.version.replace('v',''),
     nodeVersionRequired = pkg.engines.node.replace('>=','');
 
+
 // check node version compatibility
 if(nodeVersion <= nodeVersionRequired){
-
     console.log();
-    console.error(chalk.red.bold('✗ '), chalk.red.bold('Siteshooter requires node version ' + pkg.engines.node));
+    console.error(chalk.red.bold('✗ '), chalk.red.bold('NODE ' + process.version + ' was detected. Siteshooter requires node version ' + pkg.engines.node));
     console.log();
-
     process.exit(1);
+}
+else{
+
+    // check for new version of Siteshooter
+    var updater = require('update-notifier');
+
+    updater({pkg: pkg}).notify({defer: true});
 }
 
 var siteshooter = require('../index'),
