@@ -22,15 +22,14 @@ describe('acceptance tests for siteshooter Module', function() {
 
     it('show help passes without error', function(done) {
         siteshooter('--help', function(error, stdout, stderr) {
-            assert.ok(error === null);
+            assert(error === null);
             done();
         });
     });
 
     it('show siteshooter.yml init passes without error', function(done) {
         siteshooter('--init', function(error, stdout, stderr) {
-            console.log(stdout);
-            assert.ok(error === null);
+            assert(error === null);
             done();
         });
     });
