@@ -2,19 +2,21 @@
 [![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/devopsgroup-io/siteshooter.svg?branch=master)](https://travis-ci.org/devopsgroup-io/siteshooter)
 [![dependencies](https://david-dm.org/devopsgroup-io/siteshooter.svg)](https://david-dm.org/devopsgroup-io/siteshooter#info=dependencies&view=tables)
 
-> Automate full website screenshots and PDF generation with multiple viewports
+> Automate full website screen shots and PDF generation with multiple view ports
 
 ### Features
 
 * Crawls specified host and generates `sitemap.xml` on the fly
-* Generates entire website screenshots based on `sitemap.xml`
-* Define multiple viewports
+* Generates entire website screen shots based on `sitemap.xml`
+* Define multiple view ports
 * Automated PDF generation
 * Includes crawled meta data in generated PDF
 * Reports on broken website links (404 http response)
 * Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
-* Supports sitemaps with HTTP, HTTPS, and FTP protocol URLs
+* Supports [Salesforce Visualforce](https://developer.salesforce.com/page/Visualforce) 3 step authentication
+* Supports site maps with HTTP, HTTPS, and FTP protocol URLs
 * Follows HTTP 301 redirects
+* [Custom JavaScript inject file](#custom-javascript-inject-file) - injects into page prior to screen shooting
 
 
 **In This Documentation**
@@ -25,7 +27,7 @@
 3. [Tests](#tests)
 4. [Troubleshooting & FAQ](#troubleshooting-and-faq)
 
-## Getting Started
+## Getting Started ##
 
 #### Dependencies
 
@@ -54,7 +56,7 @@ $ npm update siteshooter --global
 * Installing with the `--global` flag affords you the `siteshooter` command on your machine's command line at any path.
 * Read more about the `--global` flag [here](https://docs.npmjs.com/files/folders).
 
-### Create a Siteshooter Configuration File
+### Create a Siteshooter Configuration File ###
 ```
 $ siteshooter --init
 ```
@@ -98,16 +100,16 @@ viewports:
 
 ### Custom JavaScript Inject File
  
- To interact with the DOM, prior to the screenshot process, add a `inject.js` file in the same directory as the `siteshooter.yml`. 
+ To interact with the DOM, prior to the screen shot process, add a `inject.js` file in the same working directory as the `siteshooter.yml`. 
 
  **Example**
  ```js
 /**
  * @file:            inject.js
- * @description:     used to inject custom JavaScript into a webpage prior to a screenshot. 
+ * @description:     used to inject custom JavaScript into a web page prior to a screen shot. 
  */
 
-console.log('Javascript injected into page.');
+console.log('JavaScript injected into page.');
 
 if ( typeof(jQuery) !== "undefined" ) {
 
@@ -131,8 +133,8 @@ ________________________________________________________________________________
 -e --debug             Output exceptions
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file
--p --pdf               Generate PDFs, by defined viewports, based on screenshots created via Siteshooter
--s --screenshots       Generate screenshots, by viewports, based on sitemap.xml file
+-p --pdf               Generate PDFs, by defined view ports, based on screen shots created via Siteshooter
+-s --screenshots       Generate screen shots, by view ports, based on sitemap.xml file
 -S --sitemap           Crawl domain name specified in siteshooter.yml file and generate a local sitemap.xml file
 -v --version           Print version number
 -V --verbose           Verbose output
