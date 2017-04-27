@@ -79,8 +79,6 @@ domain:
 pdf_options:
  excludeMeta: true
 
-screenshot:
-  delay: 400
 
 sitecrawler_options:
   exclude:
