@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.4...v1.1.5) (2017-04-27)
+
+
+### Bug Fixes
+
+* Ensure content-collection.json file exists. ([7295237](https://github.com/devopsgroup-io/siteshooter/commit/7295237))
+* **crawler:** Prevent Salesforce sites from attempting to crawl the specified site. ([cea9f96](https://github.com/devopsgroup-io/siteshooter/commit/cea9f96))
+* **screenshots:** Verify sitemap.xml file exist prior to screenshot process. ([4e9d87a](https://github.com/devopsgroup-io/siteshooter/commit/4e9d87a))
+
+
+### Performance Improvements
+
+* **screenshots:** Replace screenshot delay option with PhantomJS page onLoadFinished function. ([84c34b8](https://github.com/devopsgroup-io/siteshooter/commit/84c34b8))
+* Rework callbacks. ([f0d8213](https://github.com/devopsgroup-io/siteshooter/commit/f0d8213))
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.3...v1.1.4) (2017-04-21)
 
