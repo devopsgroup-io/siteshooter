@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.5...v1.2.0) (2017-04-28)
+
+
+### Bug Fixes
+
+* **pdf-shooter:** Correct output paths. ([dce0039](https://github.com/devopsgroup-io/siteshooter/commit/dce0039))
+* **tests:** correct Mocha formatting. ([637d2d7](https://github.com/devopsgroup-io/siteshooter/commit/637d2d7))
+* **tests:** Remove assertions. ([b0254ce](https://github.com/devopsgroup-io/siteshooter/commit/b0254ce))
+
+
+### Features
+
+* Move all sitemap logic into its own module. Do a diff on sitemap.xml and append new urls to file if file exists. ([7abedff](https://github.com/devopsgroup-io/siteshooter/commit/7abedff))
+
+
+### Performance Improvements
+
+* **screenshots:** Remove deprecated configuration	settings. ([2492d7a](https://github.com/devopsgroup-io/siteshooter/commit/2492d7a))
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/devopsgroup-io/siteshooter/compare/v1.1.4...v1.1.5) (2017-04-27)
 
