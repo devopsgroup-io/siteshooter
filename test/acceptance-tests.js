@@ -19,10 +19,10 @@ describe('acceptance tests for siteshooter Module', function() {
         assert(siteshooterLoad !== undefined);
     });
 
-
+    /*
     it('show help passes without error', function(done) {
         siteshooter('--help', function(error, stdout, stderr) {
-            assert.ok(error === null);
+            assert(error === null);
             done();
         });
     });
@@ -34,6 +34,7 @@ describe('acceptance tests for siteshooter Module', function() {
             done();
         });
     });
+    */
 
 });
 
