@@ -30,7 +30,6 @@ var siteshooter = require('../index'),
 var exitCode = 0,
     isDebug = args.indexOf('--debug') !== -1;
 
-
 siteshooter.cli(args).then(function() {
 
     utils.log.log('\n', chalk.green.bold('✔︎'), chalk.yellow.bold('Siteshooter tasks complete\n'));
@@ -43,21 +42,16 @@ siteshooter.cli(args).then(function() {
 
 }).catch(function(error) {
     exitCode = 1;
+
     var reportError = Array.isArray(error) ? error.join('\n') : error;
 
-
-
     utils.log.log('\n\n', chalk.red.bold('✗ '), chalk.red(reportError.stack));
-
-    process.exit(exitCode);
 
 });
 
 
 process.on('exit', function() {
-
     if (isDebug) {
         console.log('EXIT', arguments);
     }
-    process.exit(exitCode);
 });
