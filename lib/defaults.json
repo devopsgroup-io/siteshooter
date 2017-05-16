@@ -16,9 +16,6 @@
     "pdf_options":{
         "excludeMeta": false
     },
-    "screenshot": {
-        "delay": "400"
-    },
     "sitecrawler_options":{
         "cache": false,
         "exclude":[],
