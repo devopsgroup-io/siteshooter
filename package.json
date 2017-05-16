@@ -43,7 +43,7 @@
     "url-parse": "^1.1.8",
     "when": "^3.7.7",
     "xml2js": "^0.4.17",
-    "xmlbuilder": "^8.2.2",
+    "xmlbuilder": "^9.0.0",
     "yamljs": "^0.2.8"
   },
   "devDependencies": {
