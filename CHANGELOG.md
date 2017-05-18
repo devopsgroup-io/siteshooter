@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.2.2...v1.3.0) (2017-05-18)
+
+
+### Bug Fixes
+
+* Add timeout option. ([8255704](https://github.com/devopsgroup-io/siteshooter/commit/8255704))
+* siteshooter.yml validation ([4e54236](https://github.com/devopsgroup-io/siteshooter/commit/4e54236))
+
+
+### Features
+
+* Allowing for custom page event tags (query string parameter appended to sitemap url) passed into inject.js file and trigger custom JS events. ([2813e9e](https://github.com/devopsgroup-io/siteshooter/commit/2813e9e))
+
+
+### Performance Improvements
+
+* **module update:**  Update xmlbuilder to 9.0.0 ([19239ca](https://github.com/devopsgroup-io/siteshooter/commit/19239ca))
+* Use q promise and remove when module dependency. ([690d442](https://github.com/devopsgroup-io/siteshooter/commit/690d442))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.2.1...v1.2.2) (2017-05-16)
 
