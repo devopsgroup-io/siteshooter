@@ -6,7 +6,7 @@
 
 ### Features
 
-* Crawls specified host and generates `sitemap.xml` on the fly
+* Crawls specified host and generates a `sitemap.xml` on the fly
 * Generates entire website screen shots based on `sitemap.xml`
 * Define multiple view ports
 * Automated PDF generation
@@ -17,6 +17,7 @@
 * Supports site maps with HTTP, HTTPS, and FTP protocol URLs
 * Follows HTTP 301 redirects
 * [Custom JavaScript inject file](#custom-javascript-inject-file) - injects into page prior to screen shooting
+* Trigger page events by passing querystring values to custom inject.js file
 
 
 **In This Documentation**
@@ -98,9 +99,9 @@ viewports:
 
 ### Custom JavaScript Inject File
  
- To interact with the DOM, prior to the screen shot process, add a `inject.js` file in the same working directory as the `siteshooter.yml`. 
+ To manipulate the DOM, prior to the screen shot process, add a `inject.js` file in the same working directory as the `siteshooter.yml`. 
 
- **Example**
+ **Example:** inject.js file
  ```js
 /**
  * @file:            inject.js
@@ -116,6 +117,69 @@ if ( typeof(jQuery) !== "undefined" ) {
     });
 }
  ```
+
+#### Trigger JavaScript Events
+
+When using the optional `inject.js` file, events can be triggered based on the following querystring parameter - **pevent**
+
+```js
+ // Add URL with pevent querystring parameter in the generated sitemap.xml
+<url>
+    <loc>https://www.devopsgroup.io?pevent=open-privacy-overlay</loc>
+    <changefreq>weekly</changefreq>
+</url>
+```
+
+**Example:** Event detection & triggering
+ ```js
+/**
+ * @file:            inject.js
+ * @description:     used to inject custom JavaScript into a web page prior to a screen shot. 
+ */
+
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+}
+
+if ( typeof(jQuery) !== "undefined" ) {
+
+    jQuery(document).ready(function() {
+        var pageName = getQueryVariable('name'),
+            pageEvent = getQueryVariable('pevent');
+
+        console.log('document ready.');
+        console.log('userAgent', navigator.userAgent);
+        console.log('Page: ', pageName);
+        console.log('Event: ', pageEvent);
+
+        switch (pageName) {
+
+            // home
+            case '':
+
+                switch (pageEvent) {
+                    case 'open-privacy-overlay':
+
+                        jQuery('a[data-target~="#modal-privacy"]').trigger('click');
+                        break;
+                }
+
+                break;
+        }
+
+    });
+}
+ ```
+
+
 
 ## CLI Options
 
