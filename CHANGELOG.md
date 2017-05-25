@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.3.0...v1.4.0) (2017-05-25)
+
+
+### Bug Fixes
+
+* **screenshots:**  Check for jQuery before using for content collection. ([536e589](https://github.com/devopsgroup-io/siteshooter/commit/536e589))
+* Set promises and write out full website summary (urls, page titles, etc.) ([aa22a7c](https://github.com/devopsgroup-io/siteshooter/commit/aa22a7c))
+* Update pdf meta information based on new content collection file. ([66e2cef](https://github.com/devopsgroup-io/siteshooter/commit/66e2cef))
+
+
+### Features
+
+* Output website summary in the console and an exported csv file. ([34a3831](https://github.com/devopsgroup-io/siteshooter/commit/34a3831))
+* Return website collected information. ([6d0ea2a](https://github.com/devopsgroup-io/siteshooter/commit/6d0ea2a))
+
+
+### Performance Improvements
+
+* Move cli checks into cli module. ([46dfa41](https://github.com/devopsgroup-io/siteshooter/commit/46dfa41))
+* Move config validation into config module. ([10e00cd](https://github.com/devopsgroup-io/siteshooter/commit/10e00cd))
+* Move content collection to screenshot module ([23c5e06](https://github.com/devopsgroup-io/siteshooter/commit/23c5e06))
+* Remove npm cheerio dependency. ([e200d23](https://github.com/devopsgroup-io/siteshooter/commit/e200d23))
+* Update logging. ([1e254fc](https://github.com/devopsgroup-io/siteshooter/commit/1e254fc))
+* Use util chalk functions. ([2d955a1](https://github.com/devopsgroup-io/siteshooter/commit/2d955a1))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.2.2...v1.3.0) (2017-05-18)
 
