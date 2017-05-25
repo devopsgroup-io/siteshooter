@@ -1,8 +1,7 @@
 #! /usr/bin/env node
 'use strict';
 
-var chalk = require('chalk'),
-    pkg = require('../package.json'),
+var pkg = require('../package.json'),
     utils = require('../lib/utils');
 
 var nodeVersion = process.version.replace('v',''),
@@ -12,7 +11,7 @@ var nodeVersion = process.version.replace('v',''),
 // check node version compatibility
 if(nodeVersion <= nodeVersionRequired){
     console.log();
-    console.error(chalk.red.bold('✗ '), chalk.red.bold('NODE ' + process.version + ' was detected. Siteshooter requires node version ' + pkg.engines.node));
+    console.error(utils.log.chalk.red.bold('✗ '), utils.log.chalk.red.bold('NODE ' + process.version + ' was detected. Siteshooter requires node version ' + pkg.engines.node));
     console.log();
     process.exit(1);
 }
@@ -30,28 +29,32 @@ var siteshooter = require('../index'),
 var exitCode = 0,
     isDebug = args.indexOf('--debug') !== -1;
 
-siteshooter.cli(args).then(function() {
+process.on('exit', function() {
+    if (isDebug) {
+        console.log('EXIT', arguments);
+    }
+});
 
-    utils.log.log('\n', chalk.green.bold('✔︎'), chalk.yellow.bold('Siteshooter tasks complete\n'));
+return siteshooter.cli(args).then(function() {
 
     if (isDebug) {
         console.log('CLI promise complete');
     }
 
-    process.exit(exitCode);
 
 }).catch(function(error) {
     exitCode = 1;
 
     var reportError = Array.isArray(error) ? error.join('\n') : error;
 
-    utils.log.log('\n\n', chalk.red.bold('✗ '), chalk.red(reportError.stack));
+    console.log('\n\n', utils.log.chalk.red.bold('✗ '), utils.log.chalk.red(reportError));
+
+
+}).done(function(){
+
+    utils.log.log('\n', utils.log.chalk.green.bold('✔︎'), utils.log.chalk.yellow.bold('Siteshooter tasks complete\n'));
+
+    process.exit(exitCode);
 
 });
 
-
-process.on('exit', function() {
-    if (isDebug) {
-        console.log('EXIT', arguments);
-    }
-});
