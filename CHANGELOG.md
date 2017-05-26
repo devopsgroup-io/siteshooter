@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.4.0...v1.5.0) (2017-05-26)
+
+
+### Bug Fixes
+
+* Adjust error message to be more helpful. ([60a14d5](https://github.com/devopsgroup-io/siteshooter/commit/60a14d5))
+* Fi issue with siteshooter —init option. ([c1e19e6](https://github.com/devopsgroup-io/siteshooter/commit/c1e19e6))
+* Merge site shooter.yml default settings with user provided settings. ([34db1c3](https://github.com/devopsgroup-io/siteshooter/commit/34db1c3))
+* Update config validation message. ([c664805](https://github.com/devopsgroup-io/siteshooter/commit/c664805))
+
+
+### Features
+
+* Enable website summary report option by default (only if an option hasnt’ been passed) ([bf37ef0](https://github.com/devopsgroup-io/siteshooter/commit/bf37ef0))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.3.0...v1.4.0) (2017-05-25)
 
