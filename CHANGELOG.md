@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.0...v1.5.1) (2017-06-15)
+
+
+### Bug Fixes
+
+* Check for missing or blank alt tags ([ae52efd](https://github.com/devopsgroup-io/siteshooter/commit/ae52efd))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.4.0...v1.5.0) (2017-05-26)
 
