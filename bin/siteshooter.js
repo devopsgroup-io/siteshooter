@@ -20,7 +20,7 @@ else{
     // check for new version of Siteshooter
     var updater = require('update-notifier');
 
-    updater({pkg: pkg}).notify({defer: true});
+    updater({pkg}).notify();
 }
 
 var siteshooter = require('../index'),
