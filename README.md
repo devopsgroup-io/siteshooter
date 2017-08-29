@@ -154,7 +154,7 @@ function getQueryVariable(variable) {
 if ( typeof(jQuery) !== "undefined" ) {
 
     jQuery(document).ready(function() {
-        var pageName = getQueryVariable('name'),
+        var pageName = window.location.pathname.replace('/', ''),
             pageEvent = getQueryVariable('pevent');
 
         console.log('document ready.');
@@ -221,29 +221,13 @@ If you're having issues with Siteshooter, [submit a GitHub Issue](https://github
 
 * Make sure you have a `siteshooter.yml` file in your working directory and it's well formatted
 
-## License
-```
-The MIT License (MIT)
+## Code of Conduct
 
-Copyright (c) 2016 Steven Britton
+Take a moment to read or [Code of Conduct](CODE_OF_CONDUCT.md)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Contributing to the project
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+We are always looking for quality contributions! Please check the [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
 
 
