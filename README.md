@@ -154,7 +154,7 @@ function getQueryVariable(variable) {
 if ( typeof(jQuery) !== "undefined" ) {
 
     jQuery(document).ready(function() {
-        var pageName = getQueryVariable('name'),
+        var pageName = window.location.pathname.replace('/', ''),
             pageEvent = getQueryVariable('pevent');
 
         console.log('document ready.');
