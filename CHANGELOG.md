@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.4"></a>
+## [1.5.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.3...v1.5.4) (2017-08-30)
+
+
+### Bug Fixes
+
+* **crawler:** Correct promise chain and rework output. ([81cd587](https://github.com/devopsgroup-io/siteshooter/commit/81cd587))
+* **screenshots:** Adjust timeouts for page loading and rendering. ([47858be](https://github.com/devopsgroup-io/siteshooter/commit/47858be))
+* **screenshots:** Run screenshots for multiple viewports at once and collect webpage information once per page. ([d0baa84](https://github.com/devopsgroup-io/siteshooter/commit/d0baa84))
+* **sitemap:** Ensure duplicates are not added to generated sitemap.xml file. ([27d2346](https://github.com/devopsgroup-io/siteshooter/commit/27d2346))
+* Website reporting URLs and meta information. ([7f31837](https://github.com/devopsgroup-io/siteshooter/commit/7f31837))
+
+
+
 <a name="1.5.3"></a>
 ## [1.5.3](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.2...v1.5.3) (2017-08-29)
 
