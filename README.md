@@ -82,6 +82,8 @@ domain:
 pdf_options:
  excludeMeta: true
 
+screenshot_options:
+  delay: 2000
 
 sitecrawler_options:
   exclude:
