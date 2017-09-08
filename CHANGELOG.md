@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.4...v1.6.0) (2017-09-08)
+
+
+### Bug Fixes
+
+* **screenshots:** Add timeout for phantom exit. ([772b988](https://github.com/devopsgroup-io/siteshooter/commit/772b988))
+
+
+### Features
+
+* **screenshots:** Add screenshot delay option. ([7073a10](https://github.com/devopsgroup-io/siteshooter/commit/7073a10))
+
+
+
 <a name="1.5.4"></a>
 ## [1.5.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.3...v1.5.4) (2017-08-30)
 
