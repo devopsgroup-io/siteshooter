@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.6.0...v1.6.1) (2017-09-14)
+
+
+### Bug Fixes
+
+* **screenshots:** Ensure there aren't any duplicate URLs when generating screenshots and content collection. ([246bb1c](https://github.com/devopsgroup-io/siteshooter/commit/246bb1c))
+
+
+### Performance Improvements
+
+* **sitemap:** Rework method chaining and report on duplicate sitemap.xml urls. ([0601734](https://github.com/devopsgroup-io/siteshooter/commit/0601734))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.5.4...v1.6.0) (2017-09-08)
 
