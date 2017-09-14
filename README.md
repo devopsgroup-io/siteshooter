@@ -38,9 +38,7 @@ Install the following prerequisite on your development machine:
 
 * [Node.js - **version >= 6.0.0**](http://nodejs.org)
 
-#### NPM Libraries
-
-Libraries **Siteshooter** depends on:
+#### Notabl NPM Modules
 
 * [PDFKit](https://github.com/devongovett/pdfkit)
 * [PhantomJS](https://github.com/ariya/phantomjs)
@@ -95,18 +93,57 @@ viewports:
  - viewport: desktop-large
    width: 1600
    height: 1200
+ - viewport: tablet-landscape
+   width: 1024
+   height: 768
+ - viewport: iPhone5
+   width: 320
+   height: 568
  - viewport: iPhone6
    width: 375
    height: 667
 
 ```
 
-### Custom JavaScript Inject File
- 
- To manipulate the DOM, prior to the screen shot process, add a `inject.js` file in the same working directory as the `siteshooter.yml`. 
+## CLI Options
 
- **Example:** inject.js file
- ```js
+```bash
+
+$ siteshooter --help
+
+Usage: siteshooter [options]
+
+OPTIONS
+_______________________________________________________________________________________
+-c --config            Show configuration
+-e --debug             Output exceptions
+-h --help              Print this help
+-i --init              Create siteshooter.yml template file in working directory
+-p --pdf               Generate PDFs, by defined view ports, based on screen shots created via Siteshooter
+-q --quiet             Only return final output
+-s --screenshots       Generate screen shots, by view ports, based on sitemap.xml file
+-S --sitemap           Crawl domain name specified in siteshooter.yml file and generate a local sitemap.xml file
+-v --version           Print version number
+-V --verbose           Verbose output
+-w --website           Report on website information based on Siteshooter crawled results
+```
+
+When running a `siteshooter` command without any options, the following options will run in order by default:
+
+* `--sitemap`
+* `--screenshots`
+* `--pdf`
+
+
+
+### Custom JavaScript Inject File
+
+To manipulate the DOM, prior to the screen shot process, add a `inject.js` file in the same working directory as the `siteshooter.yml`. 
+
+**Example:** inject.js file
+
+```js
+
 /**
  * @file:            inject.js
  * @description:     used to inject custom JavaScript into a web page prior to a screen shot. 
@@ -120,13 +157,14 @@ if ( typeof(jQuery) !== "undefined" ) {
         console.log('jQuery loaded.');
     });
 }
- ```
+```
 
 #### Trigger JavaScript Events
 
 When using the optional `inject.js` file, events can be triggered based on the following querystring parameter - **pevent**
 
 ```js
+
  // Add URL with pevent querystring parameter in the generated sitemap.xml
 <url>
     <loc>https://www.devopsgroup.io?pevent=open-privacy-overlay</loc>
@@ -135,7 +173,8 @@ When using the optional `inject.js` file, events can be triggered based on the f
 ```
 
 **Example:** Event detection & triggering
- ```js
+
+```js
 /**
  * @file:            inject.js
  * @description:     used to inject custom JavaScript into a web page prior to a screen shot. 
@@ -181,37 +220,7 @@ if ( typeof(jQuery) !== "undefined" ) {
 
     });
 }
- ```
-
-
-
-## CLI Options
-
-```bash
-
-$ siteshooter --help
-
-Usage: siteshooter [options]
-
-OPTIONS
-_______________________________________________________________________________________
--c --config            Show configuration
--e --debug             Output exceptions
--h --help              Print this help
--i --init              Create siteshooter.yml template file
--p --pdf               Generate PDFs, by defined view ports, based on screen shots created via Siteshooter
--s --screenshots       Generate screen shots, by view ports, based on sitemap.xml file
--S --sitemap           Crawl domain name specified in siteshooter.yml file and generate a local sitemap.xml file
--v --version           Print version number
--V --verbose           Verbose output
--w --website           Report on website information based on Siteshooter crawled results
 ```
-
-When running a `siteshooter` command without any options, the following will run by default (if a **siteshooter.yml** file exists in working directory):
-
-* `--pdf`
-* `--screenshots`
-* `--sitemap`
 
 ## Tests
 
@@ -221,7 +230,13 @@ Tests are written with [Mocha](https://github.com/mochajs/mocha) and can be run 
 
 If you're having issues with Siteshooter, [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
 
-* Make sure you have a `siteshooter.yml` file in your working directory and it's well formatted
+* Make sure you have a `siteshooter.yml` file in your working directory and the [yaml file is well formatted](http://www.yamllint.com/)
+* Experiencing font-loading issues? Try increasing the delay setting in your siteshooter.yml file
+
+```yml
+screenshot_options:
+  delay: 2000
+```
 
 ## Code of Conduct
 
