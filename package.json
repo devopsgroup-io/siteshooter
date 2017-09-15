@@ -11,11 +11,14 @@
   },
   "main": "./index.js",
   "repository": "https://github.com/devopsgroup-io/siteshooter",
+  "homepage": "https://devopsgroup.io/",
   "bugs": {
     "url": "https://github.com/devopsgroup-io/siteshooter/issues"
   },
   "keywords": [
     "screen shots",
+    "screenshots",
+    "seo reporting",
     "pdf generation",
     "sitemap",
     "sitemap generator",
