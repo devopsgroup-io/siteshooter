@@ -2,6 +2,7 @@
 'use strict';
 
 var pkg = require('../package.json'),
+    updateNotifier = require('update-notifier'),
     utils = require('../lib/utils');
 
 var nodeVersion = process.version.replace('v',''),
@@ -18,9 +19,7 @@ if(nodeVersion <= nodeVersionRequired){
 else{
 
     // check for new version of Siteshooter
-    var updater = require('update-notifier');
-
-    updater({pkg}).notify();
+    updateNotifier({ pkg }).notify();
 }
 
 var siteshooter = require('../index'),
