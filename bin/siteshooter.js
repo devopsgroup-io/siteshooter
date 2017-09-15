@@ -1,16 +1,17 @@
 #! /usr/bin/env node
+
 'use strict';
 
 var pkg = require('../package.json'),
     updateNotifier = require('update-notifier'),
     utils = require('../lib/utils');
 
-var nodeVersion = process.version.replace('v',''),
-    nodeVersionRequired = pkg.engines.node.replace('>=','');
+var nodeVersion =  utils.getVersion(process.version.replace('v', '').split('.')),
+    requiredNodeVersion = utils.getVersion(pkg.engines.node.replace('>=','').split('.'));
 
 
 // check node version compatibility
-if(nodeVersion <= nodeVersionRequired){
+if(nodeVersion.major < requiredNodeVersion.major){
     console.log();
     console.error(utils.log.chalk.red.bold('✗ '), utils.log.chalk.red.bold('NODE ' + process.version + ' was detected. Siteshooter requires node version ' + pkg.engines.node));
     console.log();
@@ -51,7 +52,7 @@ return siteshooter.cli(args).then(function() {
 
 }).done(function(){
 
-    utils.log.log('\n', utils.log.chalk.green.bold('✔︎'), utils.log.chalk.yellow.bold('Siteshooter tasks complete\n'));
+    utils.log.log('\n', utils.log.chalk.green.bold('✔︎'), utils.log.chalk.green.bold('Siteshooter tasks complete\n'));
 
     process.exit(exitCode);
 
