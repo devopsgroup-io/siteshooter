@@ -4,7 +4,7 @@
 [![NPM version](https://img.shields.io/npm/v/siteshooter.svg)](https://www.npmjs.com/package/siteshooter) [![Build Status](https://img.shields.io/travis/devopsgroup-io/siteshooter.svg?branch=master)](https://travis-ci.org/devopsgroup-io/siteshooter)
 [![dependencies](https://david-dm.org/devopsgroup-io/siteshooter.svg)](https://david-dm.org/devopsgroup-io/siteshooter#info=dependencies&view=tables)
 
-> Automate full website screen shots and PDF generation with multiple view ports
+> Automate full website screen shots and PDF generation with multiple view port support
 
 ### Features
 
@@ -21,6 +21,10 @@
 * [Custom JavaScript inject file](#custom-javascript-inject-file) - injects into page prior to screen shooting
 * Trigger page events by passing querystring values to custom inject.js file
 
+---
+>##### Do you need a website and workflow management platform?
+> <img src="https://cdn.rawgit.com/devopsgroup-io/catapult/master/repositories/apache/_default_/svg/catapult.svg" alt="Catapult website and workflow management platform" width="30"> **[Give Catapult a shot](https://github.com/devopsgroup-io/catapult)**
+---
 
 **In This Documentation**
 
@@ -38,11 +42,11 @@ Install the following prerequisite on your development machine:
 
 * [Node.js - **version >= 6.0.0**](http://nodejs.org)
 
-#### Notabl NPM Modules
+#### Notable npm Modules
 
 * [PDFKit](https://github.com/devongovett/pdfkit)
 * [PhantomJS](https://github.com/ariya/phantomjs)
-* [Simple web crawler](https://github.com/cgiffard/node-simplecrawler)
+* [Simple Web Crawler](https://github.com/cgiffard/node-simplecrawler)
 
 
 ### Quick Start
@@ -142,7 +146,7 @@ To manipulate the DOM, prior to the screen shot process, add a `inject.js` file 
 
 **Example:** inject.js file
 
-```js
+```javascript
 
 /**
  * @file:            inject.js
@@ -163,7 +167,7 @@ if ( typeof(jQuery) !== "undefined" ) {
 
 When using the optional `inject.js` file, events can be triggered based on the following querystring parameter - **pevent**
 
-```js
+```javascript
 
  // Add URL with pevent querystring parameter in the generated sitemap.xml
 <url>
@@ -174,7 +178,7 @@ When using the optional `inject.js` file, events can be triggered based on the f
 
 **Example:** Event detection & triggering
 
-```js
+```javascript
 /**
  * @file:            inject.js
  * @description:     used to inject custom JavaScript into a web page prior to a screen shot. 
