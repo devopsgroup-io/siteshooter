@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.6.2...v1.7.0) (2017-09-19)
+
+
+### Bug Fixes
+
+* **package:** Correct required node version ([f71945c](https://github.com/devopsgroup-io/siteshooter/commit/f71945c))
+* **Site Crawler:** Report on a links, images, css files etc. and only include pages in sitemap ([4be48f0](https://github.com/devopsgroup-io/siteshooter/commit/4be48f0))
+* **Test:** Correct formatting for Travis tests ([0a9f00c](https://github.com/devopsgroup-io/siteshooter/commit/0a9f00c))
+* **Website Crawler:** Pass through crawler exclusions ([981b447](https://github.com/devopsgroup-io/siteshooter/commit/981b447))
+
+
+### Features
+
+* **Website Reporting:** Introduce Google SpeedTest API ([92d6f4a](https://github.com/devopsgroup-io/siteshooter/commit/92d6f4a))
+
+
+### Performance Improvements
+
+* **cli:** Rework node version validation ([3bd6b01](https://github.com/devopsgroup-io/siteshooter/commit/3bd6b01))
+
+
+
 <a name="1.6.2"></a>
 ## [1.6.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.6.1...v1.6.2) (2017-09-15)
 
