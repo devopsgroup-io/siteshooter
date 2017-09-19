@@ -3,7 +3,6 @@
 'use strict';
 
 var pkg = require('../package.json'),
-    updateNotifier = require('update-notifier'),
     utils = require('../lib/utils');
 
 var nodeVersion =  utils.getVersion(process.version.replace('v', '').split('.')),
@@ -17,17 +16,14 @@ if(nodeVersion.major < requiredNodeVersion.major){
     console.log();
     process.exit(1);
 }
-else{
 
-    // check for new version of Siteshooter
-    updateNotifier({ pkg }).notify();
-}
 
-var siteshooter = require('../index'),
-    args = [].slice.call(process.argv, 2);
+var args = [].slice.call(process.argv, 2),
+    exitCode = 0,
+    siteshooter = require('../index'),
+    updateNotifier = require('update-notifier');
 
-var exitCode = 0,
-    isDebug = args.indexOf('--debug') !== -1;
+var isDebug = args.indexOf('--debug') !== -1;
 
 process.on('exit', function() {
     if (isDebug) {
@@ -37,17 +33,16 @@ process.on('exit', function() {
 
 return siteshooter.cli(args).then(function() {
 
-    if (isDebug) {
-        console.log('CLI promise complete');
-    }
+    // check for new version of Siteshooter
+    updateNotifier({pkg}).notify();
 
 
 }).catch(function(error) {
+
     exitCode = 1;
+    error = Array.isArray(error) ? error.join('\n') : error;
 
-    var reportError = Array.isArray(error) ? error.join('\n') : error;
-
-    console.log('\n\n', utils.log.chalk.red.bold('✗ '), utils.log.chalk.red(reportError));
+    console.error('\n\n', utils.log.chalk.red.bold('✗ '), utils.log.chalk.red(error));
 
 
 }).done(function(){
