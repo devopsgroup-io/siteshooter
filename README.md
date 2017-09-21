@@ -73,6 +73,9 @@ $ siteshooter --init
 Inside `siteshooter.yml`, add additional options. 
 
 * All [Simple Web Crawler options](https://github.com/cgiffard/node-simplecrawler#configuration) can be added to `sitecrawler_options` and will pass through to the crawler process
+* Generated screenshot image files are optimized using [imagemin](https://www.npmjs.com/package/imagemin) and [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant) modules, which reduce the overall size of generated PDFs. To adjust the [image quality](https://www.npmjs.com/package/imagemin-pngquant#quality), update the **image_quality** option in your siteshooter.yml file.
+
+
 
 ```yml
 domain:
@@ -86,6 +89,7 @@ pdf_options:
 
 screenshot_options:
   delay: 2000
+  image_quality: '60-80'
 
 sitecrawler_options:
   exclude:
