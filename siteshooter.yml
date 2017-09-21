@@ -13,6 +13,7 @@ pdf_options:
 
 screenshot_options:
   delay: 2000
+  image_quality: '60-80'
 
 sitecrawler_options:
   cache: false
