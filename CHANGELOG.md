@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.8.0...v1.9.0) (2017-09-21)
+
+
+### Bug Fixes
+
+* **Screenshot Process:** Ensure page has been loaded before generating screenshot. This includes capturing the document ready state and waiting until the status is reported as complete before moving onto the screenshot ([18062f3](https://github.com/devopsgroup-io/siteshooter/commit/18062f3))
+* **Website Reporting:** Correct reported image sources for images missing an alt tag ([97915eb](https://github.com/devopsgroup-io/siteshooter/commit/97915eb))
+
+
+### Features
+
+* **Screenshot Image Quality:** Add setting to adjust image quality based on min and max numbers in range 0 (worst) to 100 (perfect) ([e4a0cc3](https://github.com/devopsgroup-io/siteshooter/commit/e4a0cc3))
+
+
+### Performance Improvements
+
+* **Sitemap:**  Cache sitemap links for multiple calls ([cbb7dd6](https://github.com/devopsgroup-io/siteshooter/commit/cbb7dd6))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.7.0...v1.8.0) (2017-09-20)
 
