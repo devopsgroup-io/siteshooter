@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.9.0...v1.9.1) (2017-09-25)
+
+
+### Bug Fixes
+
+* **Screenshots:** Ensure the onLoadFinished function is registered once per page. ([6571a0a](https://github.com/devopsgroup-io/siteshooter/commit/6571a0a))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.8.0...v1.9.0) (2017-09-21)
 
