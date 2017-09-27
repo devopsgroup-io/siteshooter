@@ -246,6 +246,21 @@ screenshot_options:
   delay: 2000
 ```
 
+* Trying to take a screenshot of a page with a video? Unfortunately, [PhantomJS does not support videos](http://phantomjs.org/supported-web-standards.html). As such, here's one approach to showing a video's poster image. 
+
+```javascript
+
+/**
+ * @file:            inject.js
+ * @description:     used to display a video's poster image
+ */
+
+if( jQuery('video').length >0 ){
+    jQuery('video').parent().prepend('<img src="'+jQuery('video').attr('poster')+'"/>');
+    jQuery('video').remove();
+}
+```
+
 ## Code of Conduct
 
 Take a moment to read or [Code of Conduct](CODE_OF_CONDUCT.md)
