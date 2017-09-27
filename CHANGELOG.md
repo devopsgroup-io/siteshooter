@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.9.1...v1.10.0) (2017-09-27)
+
+
+### Bug Fixes
+
+* **Crawler:** Cleanup binding ([1005560](https://github.com/devopsgroup-io/siteshooter/commit/1005560))
+
+
+### Features
+
+* **Logging:** Add timestamp to verbose logging ([8d89639](https://github.com/devopsgroup-io/siteshooter/commit/8d89639))
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.9.0...v1.9.1) (2017-09-25)
 
