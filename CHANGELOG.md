@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.1"></a>
+## [1.10.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.10.0...v1.10.1) (2017-09-27)
+
+
+### Bug Fixes
+
+* **Screen Shots:** Move onLoadFinished event listener to after the page open event ([2e42dc4](https://github.com/devopsgroup-io/siteshooter/commit/2e42dc4))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.9.1...v1.10.0) (2017-09-27)
 
