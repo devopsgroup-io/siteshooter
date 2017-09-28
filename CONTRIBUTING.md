@@ -7,3 +7,7 @@
 * Share your experiences with Siteshooter
 
 If you're having issues with Siteshooter, [submit a GitHub Issue](https://github.com/devopsgroup-io/siteshooter/issues/new).
+
+## Development
+
+To start developing, fork and clone Siteshooter. Then from the root of the repository, run `npm link` - this creates a symbolic link so that all `siteshooter` commands instantiate from your working directory. Once finished run, `npm unlink`.
