@@ -15,6 +15,7 @@
 * Includes crawled meta data in generated PDF
 * Reports on broken website links (404 http response)
 * Supports [HTTP basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
+* Supports Microsoft Online 3 step authentication
 * Supports [Salesforce Visualforce](https://developer.salesforce.com/page/Visualforce) 3 step authentication
 * Supports site maps with HTTP, HTTPS, and FTP protocol URLs
 * Follows HTTP 301 redirects
