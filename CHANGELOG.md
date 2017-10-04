@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.10.2...v1.11.0) (2017-10-04)
+
+
+### Bug Fixes
+
+* **Logging:** Pass arguments to log function and add a timestamp ([723c943](https://github.com/devopsgroup-io/siteshooter/commit/723c943))
+
+
+### Features
+
+* **Screenshot Delay Example:** Add working example of adjusting the default screenshot delay setting ([013a6bf](https://github.com/devopsgroup-io/siteshooter/commit/013a6bf))
+
+
+
 <a name="1.10.2"></a>
 ## [1.10.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.10.1...v1.10.2) (2017-09-28)
 
