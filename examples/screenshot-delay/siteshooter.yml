@@ -1,0 +1,28 @@
+---
+domain:
+  name: https://devopsgroup.io/
+  auth:
+    user:
+    pwd:
+
+paths:
+ output: screenshots
+
+pdf_options:
+ excludeMeta: false
+
+screenshot_options:
+  delay: 6000
+  image_quality: '90-100'
+
+sitecrawler_options:
+  exclude:
+   - "#"
+   - "pdf"
+  ignoreInvalidSSL: true
+  stripQuerystring: false
+
+viewports:
+ - viewport: desktop-large
+   width: 1600
+   height: 1200
