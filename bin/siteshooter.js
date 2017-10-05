@@ -34,7 +34,7 @@ process.on('exit', function() {
 return siteshooter.cli(args).then(function() {
 
     // check for new version of Siteshooter
-    updateNotifier({pkg}).notify();
+    updateNotifier({pkg, updateCheckInterval: 1}).notify();
 
 
 }).catch(function(error) {
