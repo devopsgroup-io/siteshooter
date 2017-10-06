@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.11.2...v1.12.0) (2017-10-06)
+
+
+### Features
+
+* **CLI:** Add optional setting - file - for specifying a path to a siteshooter.yml file ([decb0b1](https://github.com/devopsgroup-io/siteshooter/commit/decb0b1))
+
+
+
 <a name="1.11.2"></a>
 ## [1.11.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.11.1...v1.11.2) (2017-10-05)
 
