@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.1"></a>
+## [1.12.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.0...v1.12.1) (2017-10-06)
+
+
+### Bug Fixes
+
+* **Working Directory:** Ensure all file reads/write follow the correct path if a file path argument has been passed ([d933b3b](https://github.com/devopsgroup-io/siteshooter/commit/d933b3b))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.11.2...v1.12.0) (2017-10-06)
 
