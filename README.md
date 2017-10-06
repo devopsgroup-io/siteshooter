@@ -127,6 +127,7 @@ OPTIONS
 _______________________________________________________________________________________
 -c --config            Show configuration
 -e --debug             Output exceptions
+-f --file              Specify path to siteshooter.yml file
 -h --help              Print this help
 -i --init              Create siteshooter.yml template file in working directory
 -p --pdf               Generate PDFs, by defined view ports, based on screen shots created via Siteshooter
