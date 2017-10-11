@@ -23,7 +23,8 @@ var args = [].slice.call(process.argv, 2),
     siteshooter = require('../index'),
     updateNotifier = require('update-notifier');
 
-var isDebug = args.indexOf('--debug') !== -1;
+var isDebug = args.indexOf('--debug') !== -1,
+    isQuiet = args.indexOf('--quiet') !== -1;
 
 process.on('exit', function() {
     if (isDebug) {
@@ -32,9 +33,6 @@ process.on('exit', function() {
 });
 
 return siteshooter.cli(args).then(function() {
-
-    // check for new version of Siteshooter
-    updateNotifier({pkg, updateCheckInterval: 1}).notify();
 
 
 }).catch(function(error) {
@@ -48,6 +46,11 @@ return siteshooter.cli(args).then(function() {
 }).done(function(){
 
     utils.log.log('\n', utils.log.chalk.green.bold('✔︎'), utils.log.chalk.green.bold('Siteshooter tasks complete\n'));
+
+    if(!isQuiet){
+        // check for new version of Siteshooter
+        updateNotifier({pkg, updateCheckInterval: 1}).notify();
+    }
 
     process.exit(exitCode);
 
