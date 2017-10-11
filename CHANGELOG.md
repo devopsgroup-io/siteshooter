@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.4"></a>
+## [1.12.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.3...v1.12.4) (2017-10-11)
+
+
+### Bug Fixes
+
+* **Update Notifier:** Move Update Notifier in the process and only run it the quiet argument is not set ([32eda20](https://github.com/devopsgroup-io/siteshooter/commit/32eda20))
+* **Working Directory:** Update argument name to something more meaningful ([6ff400b](https://github.com/devopsgroup-io/siteshooter/commit/6ff400b))
+
+
+
 <a name="1.12.3"></a>
 ## [1.12.3](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.2...v1.12.3) (2017-10-10)
 
