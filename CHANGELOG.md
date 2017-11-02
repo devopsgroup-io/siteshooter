@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.5"></a>
+## [1.12.5](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.4...v1.12.5) (2017-11-02)
+
+
+### Bug Fixes
+
+* **404 reporting:** Ensure working directory is accounted for when writing out 404 error log. ([64e7f61](https://github.com/devopsgroup-io/siteshooter/commit/64e7f61))
+
+
+
 <a name="1.12.4"></a>
 ## [1.12.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.3...v1.12.4) (2017-10-11)
 
