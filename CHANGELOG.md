@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.6"></a>
+## [1.12.6](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.5...v1.12.6) (2017-11-27)
+
+
+### Bug Fixes
+
+* **SimpleCrawler cache path:** Update path to use working directory option ([3d98fec](https://github.com/devopsgroup-io/siteshooter/commit/3d98fec))
+
+
+
 <a name="1.12.5"></a>
 ## [1.12.5](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.4...v1.12.5) (2017-11-02)
 
