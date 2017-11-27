@@ -264,6 +264,14 @@ if( jQuery('video').length >0 ){
 }
 ```
 
+* SimpleCrawler TypeError: The header content contains invalid characters
+    * Try setting the acceptCookies option to false
+
+```yml
+sitecrawler_options:
+  acceptCookies: false
+```
+
 ## Code of Conduct
 
 Take a moment to read or [Code of Conduct](CODE_OF_CONDUCT.md)
