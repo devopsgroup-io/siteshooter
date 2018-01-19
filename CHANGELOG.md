@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.0"></a>
+# [1.13.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.6...v1.13.0) (2018-01-19)
+
+
+### Features
+
+* **Azure Support:** Add support for Azure protected wites. ([95203cb](https://github.com/devopsgroup-io/siteshooter/commit/95203cb))
+
+
+
 <a name="1.12.6"></a>
 ## [1.12.6](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.5...v1.12.6) (2017-11-27)
 
