@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.1"></a>
+## [1.13.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.0...v1.13.1) (2018-02-12)
+
+
+### Bug Fixes
+
+* **Basic Authentication:** Add custom http headers for handling basic authentication ([504113c](https://github.com/devopsgroup-io/siteshooter/commit/504113c))
+
+
+
 <a name="1.13.0"></a>
 # [1.13.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.12.6...v1.13.0) (2018-01-19)
 

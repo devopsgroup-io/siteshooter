@@ -1,7 +1,7 @@
 {
   "name": "siteshooter",
   "description": "Automate full website screenshots and PDF generation with multiple viewports",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "bin": {
     "siteshooter": "./bin/siteshooter.js"
   },
