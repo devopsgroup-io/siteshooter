@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.2"></a>
+## [1.13.2](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.1...v1.13.2) (2018-03-16)
+
+
+### Bug Fixes
+
+* **Screen Shots:** Update onLoadFinished event listener timeout ([d16325f](https://github.com/devopsgroup-io/siteshooter/commit/d16325f))
+
+
+
 <a name="1.13.1"></a>
 ## [1.13.1](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.0...v1.13.1) (2018-02-12)
 
