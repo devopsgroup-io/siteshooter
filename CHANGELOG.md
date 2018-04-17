@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.4"></a>
+## [1.13.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.3...v1.13.4) (2018-04-17)
+
+
+### Bug Fixes
+
+* **json2csv:** Migrating from 3.X to 4.X ([23b3d69](https://github.com/devopsgroup-io/siteshooter/commit/23b3d69))
+
+
+
 <a name="1.13.3"></a>
 ## [1.13.3](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.2...v1.13.3) (2018-04-13)
 
