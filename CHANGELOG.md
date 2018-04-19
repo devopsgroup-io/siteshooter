@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.13.5"></a>
+## [1.13.5](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.4...v1.13.5) (2018-04-19)
+
+
+### Bug Fixes
+
+* **CLI:** Use lodash entires function for node v6 support ([9145b10](https://github.com/devopsgroup-io/siteshooter/commit/9145b10))
+
+
+
 <a name="1.13.4"></a>
 ## [1.13.4](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.3...v1.13.4) (2018-04-17)
 
