@@ -45,11 +45,11 @@
     "phantom": "^6.0.3",
     "q": "^1.5.0",
     "simplecrawler": "^1.1.5",
-    "time-stamp": "^2.0.1",
+    "time-stamp": "^2.1.0",
     "update-notifier": "^2.5.0",
     "url-parse": "^1.4.3",
     "xml2js": "^0.4.19",
-    "xmlbuilder": "^10.0.0",
+    "xmlbuilder": "^10.1.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
