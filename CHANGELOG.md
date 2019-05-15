@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.7...v1.14.0) (2019-05-15)
+
+
+### Features
+
+* **screenshots:** Introduce config setting to enable/disable transparent background images when taking screenshots. ([41b9782](https://github.com/devopsgroup-io/siteshooter/commit/41b9782))
+* **screenshots:** Introduce config setting to enable/disable transparent background images when taking screenshots. ([27b22ba](https://github.com/devopsgroup-io/siteshooter/commit/27b22ba))
+* **screenshots:** Introduce config setting to enable/disable transparent background images when taking screenshots. ([3fedad3](https://github.com/devopsgroup-io/siteshooter/commit/3fedad3))
+
+
+
 <a name="1.13.7"></a>
 ## [1.13.7](https://github.com/devopsgroup-io/siteshooter/compare/v1.13.6...v1.13.7) (2018-08-13)
 
