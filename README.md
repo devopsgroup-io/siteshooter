@@ -92,6 +92,7 @@ pdf_options:
 screenshot_options:
   delay: 2000
   image_quality: '60-80'
+  transparent_background: false
 
 sitecrawler_options:
   exclude:
